@@ -1,8 +1,13 @@
-import { useState } from 'react';
+import { useNavigation } from "@react-navigation/native";
 
 const useHome = () => {
+  const { navigate } = useNavigation();
 
-  return {};
+  const handleRoutes = (index: number) => {
+
+  }
+
+  return { handleRoutes };
 };
-        
+
 export default useHome;

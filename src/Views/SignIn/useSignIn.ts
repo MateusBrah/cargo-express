@@ -10,7 +10,7 @@ const useSignIn = () => {
     setTimeout(() => {
       navigate('home');
       setIsLoading(false);
-    }, 4000);
+    }, 1000);
   }
 
   return { isLoading, handleSignIn };

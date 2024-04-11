@@ -1,13 +1,18 @@
-import { View, Text } from "react-native";
 import React from "react";
 import useHome from "./useHome";
+import { HomeHeader } from "../../components/HomeHeader";
+import { Container, Content } from "./HomeStyles";
+import jsonData from '../StartRoute/frontend_data_gps.json'
 
 export default function HomeView() {
-  const { } = useHome();
+  const { handleRoutes } = useHome();
 
   return (
-    <View >
-      <Text>Home</Text>
-    </View>
+    <Container >
+      <HomeHeader vehicle={jsonData.vehicle}/>
+      <Content>
+        
+      </Content>
+    </Container>
   );
 }
