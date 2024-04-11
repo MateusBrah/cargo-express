@@ -1,4 +1,5 @@
-import { Container, Loading, Title } from './styles';
+import { ActivityIndicator } from 'react-native';
+import { Container, Title } from './styles';
 
 type SubmitButtonPropsT = {
   title: string;
@@ -14,7 +15,7 @@ export function SubmitButton({ title, isLoading, onPress }: Readonly<SubmitButto
       onPress={onPress}
     >
       {isLoading ? (
-        <Loading />
+        <ActivityIndicator color="#fff"/>
       ) : (
         <Title>
           {title}

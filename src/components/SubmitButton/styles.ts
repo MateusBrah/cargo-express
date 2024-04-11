@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import theme from '../../theme';
 
 export const Container = styled.TouchableOpacity`
   background-color: ${({ theme }: any) => theme.COLORS.BRAND_LIGHT};
@@ -12,10 +11,11 @@ export const Container = styled.TouchableOpacity`
 `;
 
 export const Title = styled.Text`
+  color: ${({ theme }: any) => theme.COLORS.WHITE};
   font-size: ${({ theme }: any) => theme.FONT_SIZE.MD}px;
   font-family: ${({ theme }: any) => theme.FONT_FAMILY.BOLD};
 `;
 
 export const Loading = styled.ActivityIndicator`
-
+  color: ${({ theme }: any) => theme.COLORS.WHITE};
 `;

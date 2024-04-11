@@ -8,7 +8,8 @@ const useSignIn = () => {
   const handleSignIn = () => {
     setIsLoading(true);
     setTimeout(() => {
-      navigate('home')
+      navigate('home');
+      setIsLoading(false);
     }, 4000);
   }
 
