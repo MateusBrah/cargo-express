@@ -7,6 +7,8 @@ width: 100%;
 padding: 32px;
 flex-direction: row;
 align-items: center;
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
 `;
 
 export const Welcome = styled.View`

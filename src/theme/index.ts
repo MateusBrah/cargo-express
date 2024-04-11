@@ -5,7 +5,7 @@ export default {
     BRAND_LIGHT: '#55a7eb',
     BRAND_MID: '#035191',
 
-    GRAY_100: '#E1E1E6',
+    GRAY_100: '#f5f5f5',
     GRAY_200: '#C4C4CC',
     GRAY_300: '#8D8D99',
     GRAY_400: '#7C7C8A',
