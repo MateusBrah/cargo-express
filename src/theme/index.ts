@@ -1,6 +1,6 @@
 export default {
   COLORS: {
-    WHITE: '#FFFFFF',
+    // WHITE: '#FFF',
 
     BRAND_LIGHT: '#55a7eb',
     BRAND_MID: '#035191',

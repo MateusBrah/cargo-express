@@ -4,5 +4,14 @@ export const Container = styled.ImageBackground`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }: any) => theme.COLORS.WHITE};
+`;
+
+export const Logo = styled.Image`
+  width: 200px;
+  height: 200px;
+`;
+
+export const Content = styled.ImageBackground`
+  flex: 1;
+  justify-content: center;
 `;

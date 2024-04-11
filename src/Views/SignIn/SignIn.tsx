@@ -1,16 +1,30 @@
-import { View, Text } from "react-native";
 import React from "react";
 import useSignIn from "./useSignIn";
 import backgroundImg from '../../assets/logo-removebg-preview.png';
-import { Container } from "./SignInStyles";
-import { Image } from 'react-native';
+import { Container, Logo, Content } from "./SignInStyles";
+import { SubmitButton } from "../../components/SubmitButton";
+import { LoadingComponent } from "../../components/LoadingComponent";
 
 export default function SignInView() {
-  const { } = useSignIn();
-
+  const { isLoading, handleSignIn } = useSignIn();
+  if (isLoading) {
+    return (
+      <LoadingComponent />
+    )
+  }
   return (
     <Container>
-      <Image source={backgroundImg} />
+      <Content>
+        <Logo
+          source={backgroundImg}
+          alt="Logo Cargo Express"
+        />
+        <SubmitButton
+          title="Entrar"
+          isLoading={isLoading}
+          onPress={handleSignIn}
+        />
+      </Content>
     </Container>
   );
 }
