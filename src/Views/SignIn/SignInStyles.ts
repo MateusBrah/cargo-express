@@ -16,3 +16,15 @@ export const Content = styled.View`
   flex: 1;
   justify-content: center;
 `;
+
+export const LanguageContent = styled.View`
+width: 100%;
+padding: 32px;
+flex-direction: row;
+`;
+
+export const SelectLanguage = styled.TouchableOpacity`
+  margin: 5px;
+  border-radius: 8px;
+  padding: 5px;
+`;

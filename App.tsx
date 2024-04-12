@@ -5,6 +5,7 @@ import { Routes } from './src/routes';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import theme from './src/theme';
 import { LoadingComponent } from './src/components/LoadingComponent';
+import './src/utils/Internationalization/i18n';
 
 export default function App() {
   const [fontIsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });

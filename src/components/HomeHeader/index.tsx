@@ -2,7 +2,7 @@ import { Container, VehicleIdentification, Plate, VehicleImage, Welcome } from '
 import { useHomeHeader } from './useHomeHeader';
 
 export function HomeHeader({ vehicle }: Readonly<{ vehicle: Vehicle }>) {
-  const { paddingTop } = useHomeHeader();
+  const { t, paddingTop } = useHomeHeader();
 
   return (
     <Container style={{ paddingTop }}>
@@ -12,10 +12,10 @@ export function HomeHeader({ vehicle }: Readonly<{ vehicle: Vehicle }>) {
       />
       <Welcome>
         <VehicleIdentification>
-          N.º Identificação do Veículo: {vehicle.vin}
+          {t("N.º Identificação do Veículo")}: {vehicle.vin}
         </VehicleIdentification>
         <Plate>
-          Placa: {vehicle.plate}
+          {t("Placa")}: {vehicle.plate}
         </Plate>
       </Welcome>
     </Container>

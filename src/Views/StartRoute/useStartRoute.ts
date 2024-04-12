@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRoute } from "@react-navigation/native";
 import jsonData from '../../dataBase/frontend_data_gps.json';
+import { useTranslation } from "react-i18next";
 
 interface GpsPointProps {
   longitude: number;
@@ -38,6 +39,7 @@ const getIntermediatePoints = (startPoint: GpsPointProps, endPoint: GpsPointProp
 };
 
 const useStartRoute = () => {
+  const { t } = useTranslation();
   const route = useRoute();
   const params = route.params as { courseIndex: number };
   const { courseIndex } = params;
@@ -97,7 +99,7 @@ const useStartRoute = () => {
     };
   }, [courseIndex]);
 
-  return { carPosition, routeCoordinates: gpsPoints };
+  return { t, carPosition, routeCoordinates: gpsPoints };
 };
 
 export default useStartRoute;

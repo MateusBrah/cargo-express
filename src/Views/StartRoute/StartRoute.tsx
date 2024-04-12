@@ -5,10 +5,10 @@ import { MapComponent } from '../../components/Map';
 import useStartRoute from "./useStartRoute";
 
 export default function StartRoute() {
-  const { carPosition, routeCoordinates } = useStartRoute();
+  const { t, carPosition, routeCoordinates } = useStartRoute();
   return (
     <Container>
-      <Header title='Saída' />
+      <Header title={t('Saída')} />
       {carPosition &&
         <MapComponent
           carPosition={carPosition}

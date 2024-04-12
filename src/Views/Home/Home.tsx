@@ -8,7 +8,7 @@ import jsonData from '../../dataBase/frontend_data_gps.json';
 import { WelcomeCard } from "../../components/WelcomeCard";
 
 export default function HomeView() {
-  const { handleRoutes } = useHome();
+  const { t, handleRoutes } = useHome();
   return (
     <Container>
       <HomeHeader vehicle={jsonData.vehicle} />
@@ -26,7 +26,7 @@ export default function HomeView() {
             />
           )}
           ListEmptyComponent={
-            <Text>Nenhuma rota encontrada.</Text>
+            <Text>{t("Nenhuma rota encontrada.")}</Text>
           }
         />
       </Content>

@@ -1,0 +1,15 @@
+{
+  "translation": {
+    "Entrar": "Login",
+    "Nenhuma rota encontrada.": "No route found.",
+    "N.º Identificação do Veículo": "Vehicle Identification Number",
+    "Placa": "License Plate",
+    "Início": "Start",
+    "Fim": "End",
+    "Distância": "Distance",
+    "metros": "meters",
+    "Saída": "Exit",
+    "Seja bem vindo!": "Welcome!",
+    "Selecione um histórico de viagem.": "Select a trip history."
+  }
+}
