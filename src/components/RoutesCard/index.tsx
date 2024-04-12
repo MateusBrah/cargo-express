@@ -1,4 +1,5 @@
 import { Container, Text, Info } from './styles';
+import { Truck } from 'phosphor-react-native';
 
 type RoutesCardProps = {
   data: Course;
@@ -13,6 +14,11 @@ export function RoutesCard({ data, ...rest }: Readonly<RoutesCardProps>) {
         <Text>Fim: {data.end_at}</Text>
         <Text>Distância: {data.distance} metros</Text>
       </Info>
+      <Truck
+        size={32}
+        weight='bold'
+        color="#55a7eb"
+      />
     </Container>
   );
 }

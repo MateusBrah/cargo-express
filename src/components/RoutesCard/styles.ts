@@ -18,7 +18,7 @@ export const Info = styled.View`
 export const Text = styled.Text`
   color: ${({ theme }: any) => theme.COLORS.GRAY_800};
   font-size: ${({ theme }: any) => theme.FONT_SIZE.XS}px;
-  font-family: ${({ theme }: any) => theme.FONT_FAMILY.REGULAR};
+  font-family: ${({ theme }: any) => theme.FONT_FAMILY.BOLD};
   margin-top: 4px;
 `;
 

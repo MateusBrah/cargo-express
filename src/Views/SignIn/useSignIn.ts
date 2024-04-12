@@ -4,7 +4,7 @@ import { useState } from "react";
 const useSignIn = () => {
   const { navigate } = useNavigation();
   const [isLoading, setIsLoading] = useState(false);
-
+  // Simula um login
   const handleSignIn = () => {
     setIsLoading(true);
     setTimeout(() => {

@@ -5,9 +5,5 @@ export const useHomeHeader = () => {
 
   const paddingTop = safeArea.top + 32;
 
-  const handleLogout = () => {
-
-  }
-
-  return { paddingTop, handleLogout };
+  return { paddingTop };
 };
