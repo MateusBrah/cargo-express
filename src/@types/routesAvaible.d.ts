@@ -30,7 +30,7 @@ interface Course {
 interface StopPoints {
   type: string;
   crs: CRS;
-  coordinates: (number | null)[][];
+  coordinates: LatLng[],
 }
 
 interface CRS {
