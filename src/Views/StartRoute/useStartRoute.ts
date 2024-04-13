@@ -3,24 +3,6 @@ import { useRoute } from "@react-navigation/native";
 import jsonData from '../../dataBase/frontend_data_gps.json';
 import { useTranslation } from "react-i18next";
 
-interface GpsPointProps {
-  longitude: number;
-  latitude: number;
-  acquisition_time_unix: number;
-  speed: number;
-  direction: number;
-  acquisition_time: string;
-  address?: string;
-}
-
-interface Course {
-  gps: GpsPointProps[];
-}
-
-interface JsonData {
-  courses: Course[];
-}
-
 const data: JsonData = jsonData;
 
 const getIntermediatePoints = (startPoint: GpsPointProps, endPoint: GpsPointProps, steps: number): GpsPointProps[] => {
